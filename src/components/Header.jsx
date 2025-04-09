@@ -12,12 +12,12 @@ function Header() {
     { name: 'Home', slug: '/', active: true },
     { name: 'Login', slug: '/login', active: !authStatus },
     { name: 'Signup', slug: '/signup', active: !authStatus },
-    { name: 'All Posts', slug: '/all-posts', active: authStatus },
+    { name: 'My Posts', slug: '/all-posts', active: authStatus },
     { name: 'Add Post', slug: '/add-post', active: authStatus },
   ]
 
   return (
-    <header className="w-full bg-white shadow-md sticky top-0 z-50">
+    <header className="w-full bg-[#7d9de2] shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -35,7 +35,7 @@ function Header() {
                   <li key={item.name}>
                     <button
                       onClick={() => navigate(item.slug)}
-                      className="px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-100 rounded-md transition-colors duration-200"
+                      className="px-4 py-2 text-sm font-medium text-[#2C3E50] hover:bg-[#9EC6F3] hover:text-white rounded-md transition-colors duration-200"
                     >
                       {item.name}
                     </button>

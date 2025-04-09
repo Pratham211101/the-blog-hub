@@ -29,7 +29,8 @@ export class Service{
                 }
             )
         } catch (error) {
-            throw error;
+            console.error("Error creating post (likely duplicate or invalid slug):", error.message);
+            return null; // return something predictable
             
         }
     }

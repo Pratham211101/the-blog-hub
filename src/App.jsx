@@ -25,7 +25,7 @@ function App() {
   
   return !loading ? 
   <div className=''>
-    <div className='min-h-screen flex flex-col justify-between items-center bg-gray-400'>
+    <div className='min-h-screen flex flex-col justify-between items-center bg-[#9EC6F3]'>
     <Header/>
     <main className='flex-1 flex items-center justify-center w-full'>
       <Outlet/>

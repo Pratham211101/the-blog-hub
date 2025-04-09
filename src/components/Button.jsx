@@ -3,7 +3,7 @@ import React from "react";
 export default function Button({
     children,
     type = "button",
-    bgColor = "bg-blue-600",
+    bgColor = "bg-[#27548A]",
     textColor = "text-white",
     className = "",
     ...props
@@ -13,24 +13,23 @@ export default function Button({
             type={type}
             className={`
                 px-5 py-2.5 
-                rounded-xl 
+                rounded-2xl 
                 font-medium 
-                shadow-sm 
+                shadow 
                 transition-all 
-                duration-500
-                
-                ease-in-out
+                duration-300 
+                ease-in-out 
                 ${bgColor} 
-                ${textColor}
-                hover:brightness-150
-                hover:shadow-md
-                cursor-pointer
-                border-2 border-transparent hover:border-blue-400
+                ${textColor} 
+                hover:bg-[#eef6b6]
+                hover:text-blue-950
+                hover:scale-105
+                active:scale-95
                 focus:outline-none 
                 focus:ring-2 
                 focus:ring-offset-2 
-                focus:ring-blue-400 
-                disabled:opacity-50
+                focus:ring-[#9FB3DF] 
+                disabled:opacity-50 
                 disabled:cursor-not-allowed
                 ${className}
             `}

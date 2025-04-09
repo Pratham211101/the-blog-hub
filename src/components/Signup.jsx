@@ -31,7 +31,7 @@ function Signup() {
 
     return (
         <div >
-            <div className="w-full max-w-md bg-white rounded-xl shadow-md p-8">
+            <div className="w-full max-w-md bg-[#fcf4e4] rounded-xl shadow-md p-8">
                 <div className="mb-4 flex justify-center">
                     <span className="inline-block w-full max-w-[100px]">
                         <img src={Logo} alt="TBH Logo" className='ml-3 w-[70px] object-contain h-auto' />

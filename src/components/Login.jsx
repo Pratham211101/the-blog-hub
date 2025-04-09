@@ -6,7 +6,7 @@ import {Input} from './index';
 import { useDispatch } from 'react-redux';
 import authService from '../appwrite/auth';
 import { useForm } from 'react-hook-form';
-import { FaGoogle } from 'react-icons/fa';
+import { FcGoogle } from "react-icons/fc";
 import logo from '../assets/tbh-logo.png';
 import  Button  from '@mui/material/Button';
 
@@ -32,7 +32,7 @@ function Login() {
 
     return (
         <div className="flex items-center justify-center min-h-28 bg-gray-50 rounded-2xl">
-            <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-md">
+            <div className="w-full max-w-md bg-[#fcf4e4] p-8 rounded-xl shadow-md">
                 <div className="mb-4 flex justify-center">
                     <span className="inline-block w-full max-w-[100px]">
                         <img src={logo} alt="TBH Logo" className='ml-3 w-[70px] object-contain h-auto' />
@@ -51,7 +51,7 @@ function Login() {
 
                 {/* Optional: Google Sign-In */}
                 <button className="w-full flex items-center justify-center gap-2 border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-100 transition mb-6">
-                    <FaGoogle className="text-lg" />
+                    <FcGoogle className="text-lg" />
                     <span>Google</span>
                 </button>
 
